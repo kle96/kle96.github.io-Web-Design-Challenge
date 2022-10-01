@@ -1,0 +1,10 @@
+.navbar-brand {
+    text-align: left;
+}
+body { padding-top: 100px; }
+img {
+    padding-top: 5%;
+    object-fit: cover;
+    width: 250px;
+    max-height: 100%;
+}
