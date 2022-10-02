@@ -8,21 +8,21 @@
     <link href="assets/CSS/style.css" rel="stylesheet">
 </head>
 <!-- Navigation Bar -->
-<nav class="navbar bg-light fixed-top">
+<nav class="navbar bg-custom-2 fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><strong>Weather API Analysis</strong><br><small>By Kristy Le</small></a>
+      <a class="navbar-brand heading-colors" href="index.html"><strong>Weather API Analysis</strong><br><small>By Kristy Le</small></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas offcanvas-end bg-color-sidenav" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><strong>Weather API Analysis</strong><br><small>By Kristy Le</small></h5>
+          <h5 class="offcanvas-title heading-colors" id="offcanvasNavbarLabel"><strong>Weather API Analysis</strong><br><small>By Kristy Le</small></h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
+        <div class="offcanvas-body bg-color-sidenav">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
             </li>
             <!-- Drop Down to hold links to Plot Pages -->
             <li class="nav-item dropdown">
@@ -30,29 +30,21 @@
                   Plots
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Latitude vs. Temperature</a></li>
-                  <li><a class="dropdown-item" href="#">Latitude vs. Humidity</a></li>
-                  <li><a class="dropdown-item" href="#">Latitude vs. Cloudiness</a></li>
-                  <li><a class="dropdown-item" href="#">Latitude vs. Wind Speed</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="Visualizations/temperature_page.html">Latitude vs. Temperature</a></li>
+                  <li><a class="dropdown-item" href="Visualizations/humidity_page.html">Latitude vs. Humidity</a></li>
+                  <li><a class="dropdown-item" href="Visualizations/cloudiness_page.html">Latitude vs. Cloudiness</a></li>
+                  <li><a class="dropdown-item" href="Visualizations/wind_speed_page.html">Latitude vs. Wind Speed</a></li>
                 </ul>
               </li>
             <!-- Link to Comparison Page -->
             <li class="nav-item">
-              <a class="nav-link" href="#">Comparison</a>
+              <a class="nav-link" href="Visualizations/comparison_page.html">Comparison</a>
             </li>
             <!-- Link to Dataset -->
             <li class="nav-item">
-                <a class="nav-link" href="#">Dataset</a>
+                <a class="nav-link" href="Visualizations/data_page.html">Dataset</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
         </div>
       </div>
     </div>
@@ -62,14 +54,12 @@
       <div class="container">
         <!-- Summary Section -->
         <div class="row">
-          <div class="col">
-            <h1 class="text-center">Summary</h1>
-            <br>
+          <div class="col description_format">
+            <h1 class="text-center heading-colors">Summary</h1>
             <p>For the Weather API Analysis, we will be exploring the relationship between the weather and location.
                 It is well known that as you get closer to the equator, the temperature increases and gets hotter.
                 Therefore, we want to see if we could find quantitative results that support this theory.
             </p>
-            <br>
             <p>To find these results, we will be utilizing data on temperature, humidity, cloudiness, and wind speed over 500 cities.
                 Our target goal is to discover if there are any relationship between these different weather features and how close
                 the cities are to the equator. Thus, we will be utilizing the latitude of each city to determine the distance from the equator
@@ -77,7 +67,7 @@
             </p>
         </div>
             <!-- Visualization links -->
-          <div class="col text-center">
+          <div class="col text-center heading-colors">
             <div class="row">
                 <h2>
                     Visualizations
@@ -85,20 +75,20 @@
             </div>
             
             <!-- Inside grid -->
-            <div class="container">
+            <div class="container grid_img">
                 <div class="row">
                     <div class="col">
-                        <a href="#"><img src="/assets/Images/Weather-lat_temp_fig.png" alt="Latitude vs. Temperature Scatter Plot"></a>
+                        <a href="Visualizations/temperature_page.html"><img src="/assets/Images/Weather-lat_temp_fig.png" alt="Latitude vs. Temperature Scatter Plot"></a>
                     </div>
                     <div class="col">
-                        <a href="#"><img src="/assets/Images/Weather-lat_humidity.png" alt="Latitude vs. Humidity Scatter Plot"></a>
+                        <a href="Visualizations/humidity_page.html"><img src="/assets/Images/Weather-lat_humidity.png" alt="Latitude vs. Humidity Scatter Plot"></a>
                     </div>
                 <div class="row">
                     <div class="col">
-                        <a href="#"><img src="/assets/Images/Weather-lat_cloud.png" alt="Latitude vs. Cloudiness Scatter Plot"></a>
+                        <a href="Visualizations/cloudiness_page.html"><img src="/assets/Images/Weather-lat_cloud.png" alt="Latitude vs. Cloudiness Scatter Plot"></a>
                     </div>
                     <div class="col">
-                        <a href="#"><img src="/assets/Images/Weather-lat_wind.png" alt="Latitude vs. Wind Speed Scatter Plot"></a>
+                        <a href="Visualizations/wind_speed_page.html"><img src="/assets/Images/Weather-lat_wind.png" alt="Latitude vs. Wind Speed Scatter Plot"></a>
                     </div>
                 </div>
                 </div>
